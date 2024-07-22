@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 
-import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
 
 import "./globals.css";
 
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description: "Your favorite anime, all in one place.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
